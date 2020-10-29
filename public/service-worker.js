@@ -4,12 +4,14 @@ const DATA_CACHE_NAME = "data-cache-v1";
 
 const iconSizes = [ "192", "512"];
 const iconFiles = iconSizes.map(
-  (size) => `/assets/images/icons/icon-${size}x${size}.png`
+  (size) => `/icons/icon-${size}x${size}.png`
 );
 
 const staticFilesToPreCache = [
   "/",
-  "/app.js",
+  "/styles.css",
+  "/index.js",
+  "/db.js",
   "/manifest.webmanifest",
 ].concat(iconFiles);
 
@@ -47,7 +49,7 @@ self.addEventListener("activate", function(evt) {
 // fetch
 self.addEventListener("fetch", function(evt) {
   const {url} = evt.request;
-  if (url.includes("/") || url.includes("/api")) {
+  if (url.includes("/api/transaction") || url.includes("/")) {
     evt.respondWith(
       caches.open(DATA_CACHE_NAME).then(cache => {
         return fetch(evt.request)
