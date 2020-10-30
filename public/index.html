@@ -11,18 +11,22 @@
   <link rel="stylesheet" href="styles.css">
 
   <title>Budget Tracker</title>
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
-<body>
+    <nav class="navbar" style ="border: 2px solid black; padding: 10px; background:#b3ff66 ; margin-bottom: 5%; text-align: center;">
+      <a class="navbar-brand" >Budget Tracker</a>
+    </nav>
+<body style="background-color:lightgray ;">
   <div class="wrapper">
     <div class="total">
-      <div class="total">Your total is: $<span id="total">0</span></div>
+      <div class="total">Your Total is: $<span id="total">0</span></div>
     </div>
 
     <div class="form">
       <input type="text" id="t-name" placeholder="Name of transaction" />
       <input type="number" min="0" id="t-amount" placeholder="Transaction amount" />
-      <button id="add-btn"><i class="fa fa-plus buttons"></i> Add Funds</button>
-      <button id="sub-btn"><i class="fa fa-minus"></i> Subtract Funds</button>
+      <button id="add-btn"style="background-color:#b3ff66 ;"><i class="fa fa-plus buttons" ></i> Add Funds</button>
+      <button id="sub-btn" style="background-color:#b3ff66 ;"><i class="fa fa-minus"></i> Subtract Funds</button>
       <p class="error"></p>
     </div>
 
