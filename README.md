@@ -1,63 +1,48 @@
-# Unit 18 PWA Homework: Online/Offline Budget Trackers
+# Budget Tracker
 
-Add functionality to our existing Budget Tracker application to allow for offline access and functionality.
-
-The user will be able to add expenses and deposits to their budget with or without a connection. When entering transactions offline, they should populate the total when brought back online.
-
-Offline Functionality:
-
-  * Enter deposits offline
-
-  * Enter expenses offline
-
-When brought back online:
-
-  * Offline entries should be added to tracker.
-
-## User Story
-AS AN avid traveller
-I WANT to be able to track my withdrawals and deposits with or without a data/internet connection
-SO THAT my account balance is accurate when I am traveling
-
-## Business Context
-
-Giving users a fast and easy way to track their money is important, but allowing them to access that information anytime is even more important. Having offline functionality is paramount to our applications success.
+## Description
+<br>
+A PWA that tracks your budget and expenditures. It should work on and offline. when a number is entered it is graphed to the current budget
 
 
-## Acceptance Criteria
-GIVEN a user is on Budget App without an internet connection
-WHEN the user inputs a withdrawal or deposit
-THEN that will be shown on the page, and added to their transaction history when their connection is back online.
+### Licenses
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+<br>
+'A short, permissive software license. Basically, you can do whatever you want as long as you include the original copyright and license notice in any copy of the software/source.  There are many variations of this license in use.' - exerpt from 'https://tldrlegal.com/license/mit-license'
 
-- - -
+## Table of Contents
+<br>
+* <a href="#install">Installation</a>
+<br>
+* <a href ="#use">Usage Information</a>
+<br>
+* <a href="#test">Test Instructions</a>
+<br>
+* <a href="#q">Questions</a>
 
-## Commit Early and Often
+<h3 id= "install" > Installation</h3>
+<br>
+you need to install express, compression, lite-server, mongoose, and morgan
 
-* One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
 
-1. Your commit history is a signal to employers that you are actively working on projects and learning new skills
+<h3 id = "use"> Usage Information</h3>
+<br>
+*Guidelines for use:*
+<br>
+Use to track your budget
+<br>
+*Guidelines for Contribution:* 
+<br>
+Ask if you'd like to contribute
 
-2. Your commit history allows you to revert your code base in the event that you need to return to a previous state
+<h3 id="test"> Test Instructions</h3>
+test to see if it works
 
-* Follow these guidelines for committing:
 
-  * Make single purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits
+<h2 id = "q"> Questions</h2>
 
-  * Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history
-
-  * Don't commit half done work, for the sake of your collaborators (and your future self!)
-
-  * Test your application before you commit to ensure functionality at every step in the development process
-
-* We would like you to have well over 200 commits by graduation, so commit early and often!
-
-* Deploy your application with [Heroku and MongoDB Atlas.](../04-Important/MongoAtlas-Deploy.md)
-
-## Submission on BCS
-
-* You are required to submit the following:
-
-  * the URL to the deployed application
-
-  * the URL to the Github repository
-
+If you have Questions you can check out:
+<br>
+<a href="https://www.github.com/wuzzlefump">https://www.github.com/wuzzlefump</a><br>
+or email:
+paulelliottwork@gmail.com
